@@ -7,6 +7,9 @@ usuarios = [
     ["joao", "joao@gmail.com", 18]
 ]
 
+primeiro_usuario = usuarios[0]
+
+print(primeiro_usuario)
 # loop pra mostra a lista toda
 for usuario in usuarios:
     print(usuario)
