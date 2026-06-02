@@ -7,9 +7,12 @@ usuarios = [
     ["joao", "joao@gmail.com", 18]
 ]
 
-# 1. O correto é usar "usuario" no singular para não destruir a lista original
+# loop pra mostra a lista toda
 for usuario in usuarios:
     print(usuario)
 
-# 2. Uso correto dos colchetes separados para pegar o e-mail do alysson
+#pesca so a linha
+print(usuarios[0])
+
+# pesca so algo expecifico da lista
 print(usuarios[0][0])
