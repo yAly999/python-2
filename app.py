@@ -36,8 +36,15 @@ def processar_formulario():
         mensagem_curso = "funcional pequenino gafanhoto!"             
     else:
         mensagem_curso = "curso interessante!"
-                
-                
+
+    mensagem_resultado = f"{mensagem_base}\n{mensagem_idade}\n{mensagem_curso}"       
+
+    mensagem_resultado = "Sucesso!\n", mensagem_resultado
+
+    return render_template('formulario.html', resultado= mensagem_resultado)
+
+if __name__ == ' __main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)         
            
     
 
