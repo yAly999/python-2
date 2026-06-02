@@ -9,6 +9,38 @@
 
 <div class="container">
     <h1>Formulario de Cadastro</h1>
+    <p>Preencha os dados abaixo:</p>
+
+<form action="/processar" method="POST"></form>
+    <div class="campo">
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" id="nome">
+    </div>
+
+    <div class="campo">
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade">
+    </div>
+
+    <div class="campo">
+        <label for="curso">Curso:</label>
+        <select name="curso" id="curso">
+            <option value="">Selecione...</option>
+            <option value="">Python</option>
+            <option value="">Flask</option>
+            <option value="">HTML/CSS</option>
+        </select>
+    </div>
+    <button type="submit">Enviar dados</button>
+</form>
+</div>
+<!-- area aonde o resultado vai aparecer(Flask) -->
+<div class="resultado">
+    <h3>Resultado do processamento:</h3>
+<!-- jinja2 (template Flask)
+ o {{resultado}}  sera substituid pelo texto que o python enviar -->
+
+    <p>{{ resultado }}</p>
 </div>
 
 </body>
